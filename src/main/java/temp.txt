@@ -1,0 +1,11 @@
+        JFileChooser chooser = new JFileChooser();
+        int returnVal = chooser.showOpenDialog(null); //replace null with your swing container
+        File file = null;
+        if(returnVal == JFileChooser.APPROVE_OPTION)
+            file = chooser.getSelectedFile();
+        BufferedReader in = new BufferedReader(new FileReader(file));
+        String line = in.readLine();
+        while(line != null){
+            textArea.append(line + "\n");
+            line = in.readLine();
+        }
