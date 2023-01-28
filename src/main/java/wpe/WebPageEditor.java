@@ -21,6 +21,16 @@ public class WebPageEditor extends Definitions{
                  InstantiationException e) {
             throw new RuntimeException(e);
         }
+        htmlViewer.setEditable(false);
+        textPane.setText("<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<body>\n" +
+                "\n" +
+                "<h1 style=\"background-color: red;\">Hello World!</h1>\n" +
+                "<p>This is a paragraph.</p>\n" +
+                "\n" +
+                "</body>\n" +
+                "</html>\n");
         frame.addWindowFocusListener(new WindowAdapter() {
             public void windowGainedFocus(WindowEvent e) {
                 textPane.requestFocusInWindow();
