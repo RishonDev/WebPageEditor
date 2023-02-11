@@ -2,4 +2,4 @@
 A Simple Webpage editor with preview.
 
 
-**Announcement: WebPageEditor is now becoming an IDE! This will become 2.0**
+**Announcement: WebPageEditor is now becoming an IDE! This version number will be bumped to 2.0**
